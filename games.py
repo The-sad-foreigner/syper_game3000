@@ -1,7 +1,7 @@
 import arcade
 
-from шар import Ball
-from палки import Paddle
+from ball import Ball
+from sticks import Paddle
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -81,4 +81,5 @@ class PongGame(arcade.Window):
 
     def on_mouse_press(self, x, y, button, modifiers):
         if self.game_over:
+
             self.setup()
